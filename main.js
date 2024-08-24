@@ -1,8 +1,18 @@
 alert ("Bienvenido al PIEDRA, PAPEL o TIJERA");
 alert ("Para poder iniciar el juego voy a pedirte algunos datos");
+
+/*let nombre = prompt ("Decime tu nombre").toLowerCase().trim();
+let apellido = prompt ("Decime tu apellido").toLowerCase().trim();
+let NombreApellido = alert ("Hola " + nombre + " "+ apellido + " " + "a continuación verás las instrucciones del juego.")*/
+
 let nombre = prompt ("Decime tu nombre").toLowerCase().trim();
 let apellido = prompt ("Decime tu apellido").toLowerCase().trim();
-let NombreApellido = alert ("Hola " + nombre + " "+ apellido + " " + "a continuación verás las instrucciones del juego.")
+
+function pedirNombre (nombre, apellido) {
+    alert ("Hola " + nombre + " "+ apellido + " " + "a continuación verás las instrucciones del juego.")
+}
+
+pedirNombre(nombre, apellido);
 
 
 /**************** JUEGO CON DO....WHILE ******************/
@@ -117,6 +127,7 @@ while (jugador.toLowerCase() !== "esc" && jugador !== "") {
 
 /**************** JUEGO CON FUNTION ******************/
 
+/*
 let jugador = prompt ("Elegí tu ataque, escribí:\n0 para PIEDRA⚙\n1 para PAPEL📃\n2 para TIJERA✂\nesc para salir");
 let oponente = Math.round(Math.random() *2);
 
@@ -161,4 +172,8 @@ function ataques(ataqueJugador, ataqueOponente) {
 
 }
 
-ataques (jugador, oponente)
+ataques (jugador, oponente);
+
+*/
+
+
