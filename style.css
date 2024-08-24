@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+
+:root {
+    --clr-white:#f0f8ff;
+    --clr-black:#1c1c1c;
+    --crl-skyblue:#b8e2f6;
+    --crl-skyopasi:#294a70;
+}
+
+img {
+    max-width: 100%;
+}
+
+.game {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 5rem;
+}
+
+.title-game {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--crl-skyopasi);
+}
+
+.atacks {
+    display: flex;
+    justify-content: center;
+    width: 8rem;
+}
