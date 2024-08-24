@@ -1,9 +1,13 @@
 alert ("Bienvenido al PIEDRA, PAPEL o TIJERA");
 alert ("Para poder iniciar el juego voy a pedirte algunos datos");
 
-/*let nombre = prompt ("Decime tu nombre").toLowerCase().trim();
+/*
+let nombre = prompt ("Decime tu nombre").toLowerCase().trim();
 let apellido = prompt ("Decime tu apellido").toLowerCase().trim();
 let NombreApellido = alert ("Hola " + nombre + " "+ apellido + " " + "a continuación verás las instrucciones del juego.")*/
+
+
+//? ************ pedir nombre con Function ************/
 
 let nombre = prompt ("Decime tu nombre").toLowerCase().trim();
 let apellido = prompt ("Decime tu apellido").toLowerCase().trim();
@@ -15,7 +19,7 @@ function pedirNombre (nombre, apellido) {
 pedirNombre(nombre, apellido);
 
 
-/**************** JUEGO CON DO....WHILE ******************/
+//? **************** JUEGO CON DO....WHILE **************************************************/
 
 /*
 
@@ -27,7 +31,7 @@ do {
     jugador = prompt ("Elegí tu ataque, escribí:\n0 para PIEDRA⚙\n1 para PAPEL📃\n2 para TIJERA✂\nesc para salir");
     oponente = Math.round(Math.random() *2);
 
-// ataque jugador
+//* ataque jugador
     if ( parseInt(jugador) == 0) {
         alert ("Elegiste Piedra ⚙")
     } else if ( parseInt(jugador) == 1) {
@@ -42,7 +46,7 @@ do {
     }
 
 
-// ataque oponente
+//* ataque oponente
     if ( parseInt(oponente) == 0) {
         alert ("Tu oponente eligió Piedra ⚙")
     } else if ( parseInt(oponente) == 1) {
@@ -53,7 +57,7 @@ do {
         alert ("Eso no es un ataque 😅")
     }
 
-// resultados
+//* resultados
     if (parseInt(jugador) == parseInt(oponente)) {
         alert ("Empataron 😮")
     } else if ( parseInt(jugador) == 0 && parseInt(oponente) == 2) {
@@ -70,7 +74,7 @@ do {
 
 */
 
-/**************** JUEGO CON WHILE ******************/
+//?  **************** JUEGO CON WHILE *******************************************************************/
 
 /*
 
@@ -78,7 +82,7 @@ let jugador = prompt ("Elegí tu ataque, escribí:\n0 para PIEDRA⚙\n1 para PAP
 
 while (jugador.toLowerCase() !== "esc" && jugador !== "") {
 
-// ataque jugador
+//* ataque jugador
     if ( parseInt(jugador) == 0) {
         alert ("Elegiste Piedra ⚙")
     } else if ( parseInt(jugador) == 1) {
@@ -92,7 +96,7 @@ while (jugador.toLowerCase() !== "esc" && jugador !== "") {
     }
 
 
-// ataque oponente
+//* ataque oponente
 
     let oponente = Math.round(Math.random() *2);
 
@@ -106,7 +110,7 @@ while (jugador.toLowerCase() !== "esc" && jugador !== "") {
         alert ("Eso no es un ataque 😅")
     }
 
-// resultados
+//* resultados
     if (parseInt(jugador) == parseInt(oponente)) {
         alert ("Empataron 😮")
     } else if ( parseInt(jugador) == 0 && parseInt(oponente) == 2) {
@@ -125,7 +129,7 @@ while (jugador.toLowerCase() !== "esc" && jugador !== "") {
 */
 
 
-/**************** JUEGO CON FUNTION ******************/
+//?  **************** JUEGO CON FUNTION ******************************************************************/
 
 /*
 let jugador = prompt ("Elegí tu ataque, escribí:\n0 para PIEDRA⚙\n1 para PAPEL📃\n2 para TIJERA✂\nesc para salir");
@@ -133,7 +137,7 @@ let oponente = Math.round(Math.random() *2);
 
 function ataques(ataqueJugador, ataqueOponente) {
 
-    //ataque jugador
+//*ataque jugador
     if ( parseInt(ataqueJugador) == 0) {
         alert ("Elegiste Piedra ⚙")
     } else if ( parseInt(ataqueJugador) == 1) {
@@ -146,7 +150,7 @@ function ataques(ataqueJugador, ataqueOponente) {
         alert ("gracias por participar, nos vemos luego")
     }
 
-    //ataque oponente
+//*ataque oponente
     if ( parseInt(ataqueOponente) == 0) {
         alert ("Tu oponente eligió Piedra ⚙")
     } else if ( parseInt(ataqueOponente) == 1) {
@@ -157,7 +161,7 @@ function ataques(ataqueJugador, ataqueOponente) {
         alert ("Eso no es un ataque 😅")
     }
 
-    //resutados
+//*resutados
     if (parseInt(ataqueJugador) == parseInt(ataqueOponente)) {
         alert ("Empataron 😮")
     } else if ( parseInt(ataqueJugador) == 0 && parseInt(ataqueOponente) == 2) {
