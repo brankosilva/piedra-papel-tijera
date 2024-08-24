@@ -44,10 +44,56 @@ if (parseInt(jugador) == parseInt(oponente)) {
 } else {
     alert ("Perdiste 😭")
 }
+
 */
 
 /**************** JUEGO CON DO....WHILE ******************/
-/*
+
+let jugador;
+let oponente;
+
 do {
 
-} while (jugador !== "ESC")*/
+    jugador = prompt ("Elegí tu ataque, escribí:\n0 para PIEDRA⚙\n1 para PAPEL📃\n2 para TIJERA✂\nesc para salir");
+    oponente = Math.round(Math.random() *2);
+    
+// ataque jugador
+    if ( parseInt(jugador) == 0) {
+        alert ("Elegiste Piedra ⚙")
+    } else if ( parseInt(jugador) == 1) {
+        alert ("Elegiste Papel 📃")
+    } else if ( parseInt(jugador) == 2) {
+        alert ("Elegiste Tijera ✂")
+    } else if ( parseInt(jugador) !== 0 && parseInt(jugador) !== 1 && parseInt(jugador) !== 2 && jugador.toLowerCase() !== "esc") {
+        alert ("Eso no es un ataque 😅")
+    } else {
+        alert ("gracias por participar, nos vemos luego");
+        break;
+    }
+
+
+// ataque oponente
+    if ( parseInt(oponente) == 0) {
+        alert ("Tu oponente eligió Piedra ⚙")
+    } else if ( parseInt(oponente) == 1) {
+        alert ("Tu oponente eligió Papel 📃")
+    } else if ( parseInt(oponente) == 2) {
+        alert ("Tu oponente eligió Tijera ✂")
+    } else if ( parseInt(oponente) !== 0 && parseInt(oponente) !== 1 && parseInt(oponente) !== 2 && oponente.toLowerCase() !== "esc") {
+        alert ("Eso no es un ataque 😅")
+    }
+
+// resultados
+    if (parseInt(jugador) == parseInt(oponente)) {
+        alert ("Empataron 😮")
+    } else if ( parseInt(jugador) == 0 && parseInt(oponente) == 2) {
+        alert ("Ganasteee 🎉🎉")
+    }  else if ( parseInt(jugador) == 1 && parseInt(oponente) == 0) {
+        alert ("Ganasteee 🎉🎉")
+    } else if ( parseInt(jugador) == 2 && parseInt(oponente) == 1) {
+        alert ("Ganasteee 🎉🎉")
+    } else {
+        alert ("Perdiste 😭")
+    }
+
+} while (jugador.toLowerCase() !== "esc" && jugador !== "");
