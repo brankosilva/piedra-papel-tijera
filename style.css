@@ -7,16 +7,16 @@
     font-family: "Rubik", sans-serif;
 }
 
+img {
+    width: 100%;
+}
+
 
 :root {
     --clr-white:#f0f8ff;
     --clr-black:#1c1c1c;
     --crl-skyblue:#b8e2f6;
     --crl-skyopasi:#294a70;
-}
-
-img {
-    max-width: 100%;
 }
 
 .game {
@@ -36,6 +36,10 @@ img {
 
 .atacks {
     display: flex;
-    justify-content: center;
-    width: 8rem;
+    justify-content: center;    
+    flex-wrap: wrap;
+}
+
+.atacks img {
+    max-width: 8rem;
 }

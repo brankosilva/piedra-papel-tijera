@@ -1,27 +1,31 @@
+
 alert ("Bienvenido al PIEDRA, PAPEL o TIJERA");
 alert ("Para poder iniciar el juego voy a pedirte algunos datos");
 
 /*
 let nombre = prompt ("Decime tu nombre").toLowerCase().trim();
 let apellido = prompt ("Decime tu apellido").toLowerCase().trim();
-let NombreApellido = alert ("Hola " + nombre + " "+ apellido + " " + "a continuación verás las instrucciones del juego.")*/
+let NombreApellido = alert ("Hola " + nombre + " "+ apellido + " " + "a continuación verás las instrucciones del juego.")
+*/
 
 
 //? ************ pedir nombre con Function ************/
 
-let nombre = prompt ("Decime tu nombre").toLowerCase().trim();
-let apellido = prompt ("Decime tu apellido").toLowerCase().trim();
+
+let nombreJugador = prompt ("Decime tu nombre").toLowerCase() .trim();
+let apellidoJugador = prompt ("Decime tu apellido").toLowerCase() .trim();
 
 function pedirNombre (nombre, apellido) {
-    alert ("Hola " + nombre + " "+ apellido + " " + "a continuación verás las instrucciones del juego.")
+    return ("Hola " + nombre + " "+ apellido + " " + "a continuación verás las instrucciones del juego.")
 }
 
-pedirNombre(nombre, apellido);
+let dameTuNombre = pedirNombre(nombreJugador, apellidoJugador);
+alert(dameTuNombre);
 
 
 //? **************** JUEGO CON DO....WHILE **************************************************/
 
-/*
+
 
 let jugador;
 let oponente;
@@ -29,7 +33,7 @@ let oponente;
 do {
 
     jugador = prompt ("Elegí tu ataque, escribí:\n0 para PIEDRA⚙\n1 para PAPEL📃\n2 para TIJERA✂\nesc para salir");
-    oponente = Math.round(Math.random() *2);
+    oponente = Math.floor( Math.random() *2.5 );
 
 //* ataque jugador
     if ( parseInt(jugador) == 0) {
@@ -38,7 +42,7 @@ do {
         alert ("Elegiste Papel 📃")
     } else if ( parseInt(jugador) == 2) {
         alert ("Elegiste Tijera ✂")
-    } else if ( parseInt(jugador) !== 0 && parseInt(jugador) !== 1 && parseInt(jugador) !== 2 && jugador.toLowerCase() !== "esc") {
+    } else if ( parseInt(jugador) !== 0 && parseInt(jugador) !== 1 && parseInt(jugador) !== 2 && jugador.toLowerCase() !== "esc" ) {
         alert ("Eso no es un ataque 😅")
     } else {
         alert ("gracias por participar, nos vemos luego");
@@ -72,7 +76,6 @@ do {
 
 } while (jugador.toLowerCase() !== "esc" && jugador !== "");
 
-*/
 
 //?  **************** JUEGO CON WHILE *******************************************************************/
 
@@ -98,7 +101,7 @@ while (jugador.toLowerCase() !== "esc" && jugador !== "") {
 
 //* ataque oponente
 
-    let oponente = Math.round(Math.random() *2);
+    let oponente = Math.floor( Math.random() *2.5 );
 
     if ( parseInt(oponente) == 0) {
         alert ("Tu oponente eligió Piedra ⚙")
@@ -133,7 +136,7 @@ while (jugador.toLowerCase() !== "esc" && jugador !== "") {
 
 /*
 let jugador = prompt ("Elegí tu ataque, escribí:\n0 para PIEDRA⚙\n1 para PAPEL📃\n2 para TIJERA✂\nesc para salir");
-let oponente = Math.round(Math.random() *2);
+let oponente = Math.floor( Math.random() *2.5 );
 
 function ataques(ataqueJugador, ataqueOponente) {
 
@@ -181,3 +184,34 @@ ataques (jugador, oponente);
 */
 
 
+
+//? ************ calculando con function ********************************************/
+
+
+/*
+function suma (numero1, numero2) {
+    return numero1 + numero2
+}
+
+let primernro = parseInt(prompt ("escribí un numero"));
+let segundonro = parseInt(prompt ("escribí otro numero"));
+
+
+/***** una opcion es ******/
+
+/*
+let resultado = suma (primernro, segundonro)
+alert ("el resutlado de la suma es = " + resultado);
+*/
+
+/*****otra opcion es******/
+
+/*
+alert ("el resutlado de la suma es = " + suma (primernro, segundonro ));
+*/
+
+/*****otra opcion es******/
+
+/*
+alert ( "el resultado del calculo es " + suma (4, 5));
+*/
