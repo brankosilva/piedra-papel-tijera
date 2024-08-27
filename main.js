@@ -25,8 +25,6 @@ alert(dameTuNombre);
 
 //? **************** JUEGO CON DO....WHILE **************************************************/
 
-
-
 let jugador;
 let oponente;
 
