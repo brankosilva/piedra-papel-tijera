@@ -150,10 +150,9 @@ while (jugador.toLowerCase() !== "esc" && jugador !== "") {
 */
 
 
+//?  **************** JUEGO CON FUNTION  ******************************************************************/
 
-//?  **************** JUEGO CON FUNTION 2  ******************************************************************/
 
-/*
 
 function PiedraPapelTijera() {
 
@@ -200,7 +199,7 @@ let oponente = Math.floor( Math.random() *2.5 );
     } else {
         alert ("Perdiste 😭")
     }
-
+    
     let queresJugar = confirm ("¿Queres jugar de nuevo?");
     if (queresJugar === true) {
         PiedraPapelTijera ();
@@ -212,7 +211,6 @@ let oponente = Math.floor( Math.random() *2.5 );
 
 PiedraPapelTijera ();
 
-*/
 
 //? ************ calculando con function ********************************************/
 
